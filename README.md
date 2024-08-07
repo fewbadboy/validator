@@ -1,5 +1,19 @@
 # README
 
-## API
+tools for validate something
 
-### contains
+## function
+
+- isExternal
+- isArray
+- validPassword
+- validName
+- validPhone
+- validURL
+- validLowerCase
+- validUpperCase
+- validAlphabets
+- validEmail
+- validateIP
+- validPort
+- validSpace
