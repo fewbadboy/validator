@@ -3,15 +3,23 @@
   "version": "1.0.0",
   "description": "A library of data validators",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fewbadboy/validator.git"
+  },
   "keywords": [
     "validators"
   ],
-  "author": "",
+  "author": "fewbadboy",
   "license": "MIT",
-  "bugs": {},
-  "homepage": ""
+  "bugs": {
+    "url": "https://github.com/fewbadboy/validator/issues",
+    "email": "renekton.king@qq.com"
+  },
+  "homepage": "https://github.com/fewbadboy/validator"
 }
