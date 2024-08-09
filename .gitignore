@@ -1,0 +1,11 @@
+# gitignore
+
+.DS_Store
+# 目录及其所有子目录中的文件
+node_modules/
+
+# 任何文件或目录
+npm-debug.log
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
