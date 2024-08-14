@@ -1,0 +1,14 @@
+export { say } from './src/person/index';
+export declare function isExternal(path: string): boolean;
+export declare function validPassword(param: string): boolean;
+export declare function validName(param: string): boolean;
+export declare function validPhone(param: string): boolean;
+export declare function validURL(url: string): boolean;
+export declare function validLowerCase(param: string): boolean;
+export declare function validUpperCase(param: string): boolean;
+export declare function validAlphabets(param: string): boolean;
+export declare function validEmail(email: string): boolean;
+export declare function validArray(param: []): boolean;
+export declare function validateIP(param: string): boolean;
+export declare function validPort(param: string | number): boolean;
+export declare function validSpace(param: string): boolean;
