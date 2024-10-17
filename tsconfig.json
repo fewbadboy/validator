@@ -30,8 +30,8 @@
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     "baseUrl": "./",                                     /* Specify the base directory to resolve non-relative module names. */
     "paths": {
-      "src/*": ["src/*"]
-      // "@types/*": ["types/*"],                        /* Mapping @types to types directory  */                              
+      "src/*": ["src/*"],
+      "types/*": ["types/*"],                            /* Mapping @types to types directory  */                              
     },                                                   /* Specify a set of entries that re-map imports to additional lookup locations. */
     "plugins": [
       // { "transform": "typescript-transform-paths" },     /* Transform paths in output .js files */
@@ -101,6 +101,7 @@
   "include": [
     "src/**/*.ts",
     "index.ts",
+    "src/types.d.ts",
   ],
   "exclude": [
     "node_modules",

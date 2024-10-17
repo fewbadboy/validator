@@ -1,8 +1,8 @@
-type Person = {
+export type Person = {
     name: string;
     age: number;
 };
-type HandleEvent = {
+export type HandleEvent = {
     handleClick: (e: Event, cb: () => void) => void;
 };
 export declare const Version: string;
@@ -20,4 +20,3 @@ export declare function click(e: Event, cb: () => void): void;
 export declare function clickCallback(): void;
 export declare const handle: HandleEvent;
 export declare function old(): void;
-export {};

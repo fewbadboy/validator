@@ -1,9 +1,9 @@
-type Person = {
+export type Person = {
   name: string
   age: number
 }
 
-type HandleEvent = {
+export type HandleEvent = {
   handleClick: (e: Event, cb: () => void) => void
 }
 /**
