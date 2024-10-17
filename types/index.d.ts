@@ -1,4 +1,3 @@
-export { say } from './src/person/index';
 export declare function isExternal(path: string): boolean;
 export declare function validPassword(param: string): boolean;
 export declare function validName(param: string): boolean;

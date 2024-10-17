@@ -1,5 +1,4 @@
-export { say } from './src/person/index'
-
+export * from '@/main/index'
 /**
  * @param {string} path
  * @returns {Boolean}

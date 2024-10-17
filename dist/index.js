@@ -1,4 +1,3 @@
-export { say } from './src/person/index';
 export function isExternal(path) {
     return /^(https?:|mailto:|tel:)/.test(path);
 }

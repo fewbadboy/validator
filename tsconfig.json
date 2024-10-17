@@ -30,7 +30,8 @@
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     "baseUrl": "./",                                     /* Specify the base directory to resolve non-relative module names. */
     "paths": {
-      "@types": ["type/*"]                               /* Mapping @types/ to types/ dir  */
+      "@/*": ["src/*"],
+      "@types/*": ["types/*"],                             /* Mapping @types to types directory  */                              
     },                                                   /* Specify a set of entries that re-map imports to additional lookup locations. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like './node_modules/@types'. */
     // "types": [],                                      /* Specify type package names to be included without being referenced in a source file. */
@@ -40,7 +41,7 @@
     // "customConditions": [],                           /* Conditions to set in addition to the resolver-specific defaults when resolving imports. */
     // "resolvePackageJsonImports": true,                /* Use the package.json 'imports' field when resolving imports. */
     // "resolvePackageJsonExports": true,                /* Use the package.json 'exports' field when resolving package imports. */
-    // "moduleResolution": "node10",                     /* Specify how TypeScript looks up a file from a given module specifier. */
+    "moduleResolution": "Node",                          /* Specify how TypeScript looks up a file from a given module specifier. */
     // "resolveJsonModule": true,                        /* Enable importing .json files. */
     // "allowArbitraryExtensions": true,                 /* Enable importing files with any extension, provided a declaration file is present. */
     // "noResolve": true,                                /* Disallow 'import's, 'require's or '<reference>'s from expanding the number of files TypeScript should add to a project. */
@@ -93,7 +94,12 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
-  "include": ["src/**/*", "index.ts"],
+  "include": [
+    "types.d.ts",
+    "src/**/*.ts",
+    "index.ts",
+    "tests/**/*.ts"
+  ],
   "exclude": [
     "node_modules",
     "dist"
