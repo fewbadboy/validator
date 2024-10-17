@@ -1,3 +1,4 @@
+export * from './src/main/index';
 export declare function isExternal(path: string): boolean;
 export declare function validPassword(param: string): boolean;
 export declare function validName(param: string): boolean;

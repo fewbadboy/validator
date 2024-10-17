@@ -1,15 +1,19 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} **/
 export default {
+  preset: "ts-jest",
   testEnvironment: "node",
   transform: {
-    "^.+.tsx?$": ["ts-jest",{}],
+    "^.+.tsx?$": [
+      "ts-jest",
+      {
+        tsconfig: "tsconfig.json"
+      }
+    ],
   },
   moduleNameMapper: {
-    '^@/(.*)$': './src/$1',
-    '^@types/(.*)$': './types/$1',
+    '^src/(.*)$': './src/$1',
+    // '^@types/(.*)$': './types/$1',
   },
-  testMatch: [
-    '**/tests/**/*.ts'
-  ],
+  // @see https://jestjs.io/docs/configuration#modulefileextensions-arraystring
   moduleFileExtensions: ['ts', 'tsx', 'js']
 };

@@ -8,6 +8,7 @@
     "prepare": "husky",
     "eslint": "eslint --fix **/*.{js,ts}",
     "commit": "commit",
+    "clean-ts": "tsc --build --clean",
     "build": "tsc",
     "test": "jest"
   },
@@ -45,7 +46,8 @@
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^8.0.1"
+    "typescript-eslint": "^8.0.1",
+    "typescript-transform-paths": "^3.5.1"
   },
   "engines": {
     "node": ">=20.18.0"

@@ -1,9 +1,15 @@
+type Person = {
+  name: string
+  age: number
+}
+
+type HandleEvent = {
+  handleClick: (e: Event, cb: () => void) => void
+}
 /**
  * @file file description
  * @author fewbadboy
  */
-
-import { HandleEvent, Person } from "types"
 
 /**
  * version information 

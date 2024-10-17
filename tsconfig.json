@@ -30,10 +30,14 @@
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     "baseUrl": "./",                                     /* Specify the base directory to resolve non-relative module names. */
     "paths": {
-      "@/*": ["src/*"],
-      "@types/*": ["types/*"],                             /* Mapping @types to types directory  */                              
+      "src/*": ["src/*"]
+      // "@types/*": ["types/*"],                        /* Mapping @types to types directory  */                              
     },                                                   /* Specify a set of entries that re-map imports to additional lookup locations. */
-    // "typeRoots": [],                                  /* Specify multiple folders that act like './node_modules/@types'. */
+    "plugins": [
+      // { "transform": "typescript-transform-paths" },     /* Transform paths in output .js files */
+      // { "transform": "typescript-transform-paths", "afterDeclarations": true } /* Transform paths in output .d.ts files */
+    ],
+    // "typeRoots": ["./types", "./node_modules/@types"],   /* Specify multiple folders that act like './node_modules/@types'. */
     // "types": [],                                      /* Specify type package names to be included without being referenced in a source file. */
     // "allowUmdGlobalAccess": true,                     /* Allow accessing UMD globals from modules. */
     // "moduleSuffixes": [],                             /* List of file name suffixes to search when resolving a module. */
@@ -95,13 +99,12 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "include": [
-    "types.d.ts",
     "src/**/*.ts",
     "index.ts",
-    "tests/**/*.ts"
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "__tests__"
   ]
 }
