@@ -6,27 +6,24 @@ tools for validate something
 
 ```shell
 # npm
-# https://registry.npmjs.org/
-# npm config set registry https://mirrors.cloud.tencent.com/npm/
 npm install @fewbadboy/validator -reg=https://mirrors.cloud.tencent.com/npm/
 
 # yarn
-# yarn config set registry https://mirrors.cloud.tencent.com/npm/
 yarn add @fewbadboy/validator --registry=https://mirrors.cloud.tencent.com/npm/
 ```
 
 ## function
 
-- isExternal
-- isArray
+- isProtocol
 - validPassword
-- validName
+- validUsername
 - validPhone
 - validURL
 - validLowerCase
 - validUpperCase
 - validAlphabets
 - validEmail
+- validArray
 - validateIP
 - validPort
 - validSpace

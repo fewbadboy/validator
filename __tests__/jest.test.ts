@@ -1,10 +1,22 @@
 import { describe, expect, test } from "@jest/globals";
 
-import { validEmail, Version } from "../index";
+import { validEmail, validSpace, Version } from "../index";
 
 describe('validate email', () => {
   test('123456789@qq.com to be true', () => {
     expect(validEmail('123456789@qq.com')).toBe(true);
+  });
+  test('null to be true', () => {
+    expect(validSpace(null)).toBe(true);
+  });
+  test('undefined to be true', () => {
+    expect(validSpace(undefined)).toBe(true);
+  });
+  test('"" to be true', () => {
+    expect(validSpace("")).toBe(true);
+  });
+  test('\n\r to be true', () => {
+    expect(validSpace('\n\r')).toBe(true);
   });
 
   /**

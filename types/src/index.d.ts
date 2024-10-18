@@ -1,0 +1,13 @@
+export declare function isProtocol(url: string): boolean;
+export declare function validPassword(password: string): boolean;
+export declare function validUsername(username: string): boolean;
+export declare function validPhone(number: string): boolean;
+export declare function validURL(url: string): boolean;
+export declare function validLowerCase(lower: string): boolean;
+export declare function validUpperCase(upper: string): boolean;
+export declare function validAlphabets(alpha: string): boolean;
+export declare function validEmail(email: string): boolean;
+export declare function validArray(array: []): boolean;
+export declare function validIP(ip: string): boolean;
+export declare function validPort(port: string | number): boolean;
+export declare function validSpace(space: string | [] | null | undefined): boolean;
